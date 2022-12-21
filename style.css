@@ -1,0 +1,191 @@
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background: #FFFFFF;
+}
+#app{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
+}
+.win_render{
+    position: relative;
+    overflow: hidden;
+
+    z-index: 2;
+
+    /*cursor: pointer;*/
+}
+.win_render.animate{
+    /*animation: introAnimate 0.8s;*/
+}
+.win_render .scratch__canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 500px;
+}
+.win_render .scratch__result{
+    visibility: hidden;
+    width: 100%;
+}
+@keyframes introAnimate{
+    from {
+        transform: translate(0px, -100px) rotateX(10deg) rotateZ(-20deg);
+        box-shadow: -2px 1px 0px 0px #202020, -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
+    }
+    to {
+        transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+:root {
+    --smaller: .75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.snowflake {
+    animation: fall calc(1s * (20 - var(--size))) linear infinite,
+    shake 8s linear infinite;
+    background-color: lightblue;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    position: absolute;
+    top: -1%;
+}
+
+@keyframes fall {
+    0% {
+        top: -1%;
+        0    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-6px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(6px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.window{
+    z-index: 4;
+}
