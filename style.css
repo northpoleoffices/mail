@@ -106,7 +106,7 @@ h1 {
 
 li {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1vw;
     list-style-type: none;
     padding: 1em;
 }
