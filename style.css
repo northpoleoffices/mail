@@ -189,3 +189,6 @@ li span {
 .window{
     z-index: 4;
 }
+.tree-view{
+    font-size:10px;
+}
