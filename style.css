@@ -106,7 +106,7 @@ h1 {
 
 li {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     list-style-type: none;
     padding: 1em;
 }
@@ -188,7 +188,4 @@ li span {
 }
 .window{
     z-index: 4;
-}
-.tree-view{
-    font-size:10px !important;
 }
