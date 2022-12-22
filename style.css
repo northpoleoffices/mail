@@ -190,5 +190,5 @@ li span {
     z-index: 4;
 }
 .tree-view{
-    font-size:10px;
+    font-size:10px !important;
 }
